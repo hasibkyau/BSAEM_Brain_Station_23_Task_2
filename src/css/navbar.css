@@ -5,6 +5,7 @@
     box-sizing: border-box;
   }
   
+  
   /* Elements */
   html {
     font-size: 1.5rem;
@@ -20,12 +21,14 @@
   
   }
   
-  
 .navbar{
     position: sticky;
     top: 0;
-    z-index: 2;
     margin-top: 20px;
+    /* background-color: rgba(0,0,0,0); */
+    /* background-color: #121212;; */
+    z-index: 1;
+
 }
 
 .navbar-brand{
@@ -36,6 +39,7 @@
     color: #FFFFFF;
 }
 
+
 .nav-link{
     text-decoration: none;
     font-weight:500;
@@ -44,10 +48,11 @@
     color: #FFFFFF;
     float:right;
     margin-left: 64px;
+    z-index: 6;
 }
 
 .nav-link:hover{
-    color: #FFFFFF;
+    color: grey;
 }
 
 .nav-link:focus {  

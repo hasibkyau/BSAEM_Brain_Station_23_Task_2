@@ -32,24 +32,24 @@ export const NavBar = () => {
 
   return (
     <Router>
-      <Navbar expand="md" className={scrolled ? "scrolled" :"" }>
+      <Navbar  expand="md" className={scrolled ? "scrolled" :"" }>
         <Container>
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" style={{marginRight:"10px"}}/>
-            BSEAM
+            <span style={{color:"white"}}> BSEAM</span>
           </Navbar.Brand>
           
           <Navbar.Toggle  aria-controls="basic-navbar-nav ">
-            <span style={{backgroundColor:"white", borderRadius:"5px"}} className="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}><p style={{color:"white"}}>Home</p></Nav.Link>
-              <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}><p style={{color:"white"}}>Authoring</p></Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p style={{color:"white"}}>Features</p></Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p style={{color:"white"}}>Designs</p></Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p style={{color:"white"}}>Contact Us</p></Nav.Link>
+              <Nav.Link href="#authoring" className={activeLink === 'Authoring' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}><p style={{color:"white"}}>Authoring</p></Nav.Link>
+              <Nav.Link href="#features" className={activeLink === 'Features' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p style={{color:"white"}}>Features</p></Nav.Link>
+              <Nav.Link href="#designs" className={activeLink === 'Designs' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p style={{color:"white"}}>Designs</p></Nav.Link>
+              <Nav.Link href="#contact" className={activeLink === 'Contact Us' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p style={{color:"white"}}>Contact Us</p></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

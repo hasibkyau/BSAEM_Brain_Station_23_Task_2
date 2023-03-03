@@ -21,3 +21,39 @@
   
   }
   
+    
+/* Modifier */
+.bg_effect{
+  position: absolute;
+  width: 1309px;
+  height: 1332px;
+
+  object-fit: cover;
+  width: 50%;
+  overflow:hidden;
+  /* Primary blue */
+  background: #007FDB;
+  opacity: 0.3;
+  filter: blur(250px);
+  z-index: 1
+}
+
+.bg_effect--top{
+  left: calc(50% - 1309px/2 + 700px);
+  top: -700px;
+}
+
+.bg_effect--bottom{
+  left: calc(50% - 1309px/2 - 300.5px);
+  top: 4321px;  
+}
+
+.bg_effect--left{
+  left: calc(50% - 1309px/2 - 659.5px);
+  top: 1360px;
+}
+
+.bg_effect--right{
+  left: calc(50% - 1309px/2 + 758.5px);
+  top: 2722px;
+}
