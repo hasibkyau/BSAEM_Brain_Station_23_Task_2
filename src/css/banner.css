@@ -1,0 +1,60 @@
+
+.title {
+    font-family: 'Inter';
+    font-style: normal;
+
+    font-weight: 700;
+    font-size: 70px;
+    /* line-height: 88px; */
+    /* or 126% */
+    line-height: 126%;
+
+    text-align: center;
+    letter-spacing: 0.2px;
+    z-index: 5;
+}
+
+.title--banner {
+    font-weight: 700;
+    font-size: 70px;
+    /* line-height: 88px; */
+    /* or 126% */
+    line-height: 126%;
+
+    text-align: center;
+    letter-spacing: 0.2px;
+
+}
+
+.title--subtitle{
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+    
+    text-align: center;
+    letter-spacing: 0.2px;
+
+}
+
+
+.btn {
+    /* button */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 25px;
+    /* identical to box height, or 147% */
+    
+    letter-spacing: 0.2px;
+    
+    /* light text */
+    width: 203.28px;
+    height: 65px;
+    
+    color: #FFFFFF;
+    margin: 15px;
+}
+
