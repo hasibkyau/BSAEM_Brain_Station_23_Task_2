@@ -1,6 +1,3 @@
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
-import img from '../../src/assets/img/GG 1.png';
 import '../css/banner.css';
 
 
