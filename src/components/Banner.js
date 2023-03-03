@@ -10,7 +10,7 @@ export const Banner = (props) => {
 
         <div class="text-center">
           <button type="button" class="btn btn-primary">Request Demo</button>
-          <button type="button" class="btn btn-outline-light"><a>Learn More</a></button>
+          <button type="button" class="btn btn-outline-light">Learn More</button>
         </div>
     </div>
   )
