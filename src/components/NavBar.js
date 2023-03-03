@@ -45,11 +45,11 @@ export const NavBar = () => {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}><p style={{color:"white"}}>Home</p></Nav.Link>
-              <Nav.Link href="#authoring" className={activeLink === 'Authoring' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}><p style={{color:"white"}}>Authoring</p></Nav.Link>
-              <Nav.Link href="#features" className={activeLink === 'Features' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p style={{color:"white"}}>Features</p></Nav.Link>
-              <Nav.Link href="#designs" className={activeLink === 'Designs' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p style={{color:"white"}}>Designs</p></Nav.Link>
-              <Nav.Link href="#contact" className={activeLink === 'Contact Us' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p style={{color:"white"}}>Contact Us</p></Nav.Link>
+              <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}><p className="navbar-link">Home</p></Nav.Link>
+              <Nav.Link href="#authoring" className={activeLink === 'Authoring' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}><p className="navbar-link">Authoring</p></Nav.Link>
+              <Nav.Link href="#features" className={activeLink === 'Features' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p className="navbar-link">Features</p></Nav.Link>
+              <Nav.Link href="#designs" className={activeLink === 'Designs' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p className="navbar-link">Designs</p></Nav.Link>
+              <Nav.Link href="#contact" className={activeLink === 'Contact Us' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p className="navbar-link">Contact Us</p></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
