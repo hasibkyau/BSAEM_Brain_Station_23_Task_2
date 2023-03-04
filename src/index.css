@@ -22,8 +22,8 @@ code {
 html {
   font-size: 1.5rem;
   font-family:'Inter';
-  color: #FFFFFF;
   background: #121212;
+  z-index: -2;
 }
 
 body{
@@ -31,6 +31,6 @@ body{
     /* overflow: hidden;  */
     overflow-x: hidden;
     width: 100%; /* restrict the page width to viewport */
-    background: #121212;
+    /* background: #121212; */
 
 }
