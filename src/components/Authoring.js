@@ -1,18 +1,48 @@
-import React from 'react';
+// import React, { useEffect } from "react";
+import React, { Component } from "react";
+
 import '../css/components.css';
 import { Image } from 'react-bootstrap';
 
 import page1 from '../assets/img/Rectangle 6.png'
+import page2 from '../assets/img/Rectangle 7.png'
+import page3 from '../assets/img/Rectangle 8.png'
+import page4 from '../assets/img/Rectangle 9.png'
 
 
-function Authoring(props) {
-    return (
+class Authoring extends Component {
+    state = {
+        page: 1
+    }
 
-        <div style={{ marginTop: "-200px" }}>
+    togglePage = (p) => {
+        this.setState({
+            page: p
+        })
+    }
+
+
+    render() {
+
+
+        let content = <Image id="page" src={page1} className="img-fluid" />;
+
+        if (this.state.page === 1) {
+            content = <Image id="page" src={page1} className="img-fluid" />;
+        } else if (this.state.page === 2) {
+            content = <Image id="page" src={page2} className="img-fluid" />;
+        } else if (this.state.page === 3) {
+            content = <Image id="page" src={page3} className="img-fluid" />;
+        } else if (this.state.page === 4) {
+            content = <Image id="page" src={page4} className="img-fluid" />;
+        } 
+
+        return (
+            <div style={{ marginTop: "-200px" }}>
 
             <div className="container">
-                <p className="title title--banner">{props.title_first_name}<br />{props.title_last_name}</p>
-                <p className="title title--subtitle">{props.subtitle}</p>
+                <p className="title title--banner">Effortlessly Create and<br />Manage Content</p>
+                <p className="title title--subtitle">Our intuitive authoring interface allows for easy and efficient content creation and management. Create and edit content, images, and videos, and preview your changes in real time.</p>
             </div>
 
             <div className='m-4'>
@@ -20,10 +50,10 @@ function Authoring(props) {
 
                 <div className='col-8 col-sm-12'>
                         
-                        <button class="toggle-button active" onclick="document.getElementById('page').src='page1'">Component 1</button>
-                        <button class="toggle-button " onclick="document.getElementById('page').src='../assets/img/Rectangle 7.png'">Component 2</button>
-                        <button class="toggle-button " onclick="document.getElementById('page').src='../assets/img/Rectangle 8.png'">Component 3</button>
-                        <button class="toggle-button " onclick="document.getElementById('page').src='../assets/img/Rectangle 9.png'">Component 4</button>
+                        <button class="toggle-button active" onClick={this.togglePage}>Component 1</button>
+                        <button class="toggle-button " onClick={this.togglePage}>Component 2</button>
+                        <button class="toggle-button " onClick={this.togglePage}>Component 3</button>
+                        <button class="toggle-button " onClick={this.togglePage}>Component 4</button>
                         
                     </div>
                     
@@ -32,7 +62,7 @@ function Authoring(props) {
 
                 <div className='row gx-0'>
                     <div className='col-md-8 col-sm-12'>
-                        <Image id="page" src={page1} className="img-fluid" />
+                        {content}
                     </div>
 
                     <div className='col-md-4 col-sm-12'>
@@ -53,14 +83,9 @@ function Authoring(props) {
 
         </div>
 
+        );
 
-    )
-}
-
-Authoring.defaultProps = {
-    title_first_name: "Transform Your",
-    title_last_name: "Web Experience",
-    subtitle: "Transform your website with AEM components designed for flexibility and scalability. Our pre-built components and drag-and-drop editor make it easy for anyone!",
+    }
 
 }
 
