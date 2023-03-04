@@ -12,30 +12,36 @@ import page4 from '../assets/img/Rectangle 9.png'
 
 class Authoring extends Component {
     state = {
-        page: 1
+        page: page1
     }
 
-    togglePage = (p) => {
+    togglePage1 = () => {
         this.setState({
-            page: p
+            page: page1
         })
     }
 
+    togglePage2 = () => {
+        this.setState({
+            page: page2
+        })
+    }
+
+    togglePage3 = () => {
+        this.setState({
+            page: page3
+        })
+    }
+
+    togglePage4 = () => {
+        this.setState({
+            page: page4
+        })
+    }
 
     render() {
 
-
-        let content = <Image id="page" src={page1} className="img-fluid" />;
-
-        if (this.state.page === 1) {
-            content = <Image id="page" src={page1} className="img-fluid" />;
-        } else if (this.state.page === 2) {
-            content = <Image id="page" src={page2} className="img-fluid" />;
-        } else if (this.state.page === 3) {
-            content = <Image id="page" src={page3} className="img-fluid" />;
-        } else if (this.state.page === 4) {
-            content = <Image id="page" src={page4} className="img-fluid" />;
-        } 
+        let content = <Image id="page" src={this.state.page} className="img-fluid" />;
 
         return (
             <div style={{ marginTop: "-200px" }}>
@@ -50,10 +56,10 @@ class Authoring extends Component {
 
                 <div className='col-8 col-sm-12'>
                         
-                        <button class="toggle-button active" onClick={this.togglePage}>Component 1</button>
-                        <button class="toggle-button " onClick={this.togglePage}>Component 2</button>
-                        <button class="toggle-button " onClick={this.togglePage}>Component 3</button>
-                        <button class="toggle-button " onClick={this.togglePage}>Component 4</button>
+                        <button class="toggle-button active" onClick={this.togglePage1}>Component 1</button>
+                        <button class="toggle-button " onClick={this.togglePage2}>Component 2</button>
+                        <button class="toggle-button " onClick={this.togglePage3}>Component 3</button>
+                        <button class="toggle-button " onClick={this.togglePage4}>Component 4</button>
                         
                     </div>
                     
