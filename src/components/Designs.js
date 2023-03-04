@@ -2,14 +2,15 @@ import React from 'react';
 import '../css/components.css';
 import { Image } from 'react-bootstrap';
 
-import logo1 from '../assets/logo/image 2.png'
-import logo2 from '../assets/logo/image 3.png'
-import logo3 from '../assets/logo/image 4.png'
+import logo1 from '../assets/img/page 1 1.png'
+import logo2 from '../assets/img/page 1 2.png'
+import logo3 from '../assets/img/page 2 1.png'
+
 
 let data = {
-  "title_first_name": "Partners",
-  "title_last_name": null,
-  "subtitle": "Our expertise in AEM Components helps mid to large size businesses transform their web experience. With a commitment to customer satisfaction, our partners benefit from a range of customizable, scalable, and responsive components that deliver an exceptional user experience.",
+  "title_first_name": "Pre-Designed",
+  "title_last_name": "Templates",
+  "subtitle": "In addition to our pre-built components, AEM commons offers a range of pre-designed templates to choose from. Easily view and select the template that works best for your business needs.",
 }
 
 
@@ -21,10 +22,12 @@ export const Designs = () => {
         <p className="title title--subtitle">{data.subtitle}</p>
       
       <br />
+      </div>
 
-      <Image src={logo1} alt="logo" style={{ margin: "0 48px"}} />
-      <Image src={logo2} alt="logo" style={{ margin: "0 48px"}}/>
-      <Image src={logo3} alt="logo" style={{ margin: "0 48px"}}/>
+      <div className=' text-center'>
+      <img src={logo1} alt="logo" style={{ margin:"0px"}} />
+      <img src={logo2} alt="logo" style={{ marginTop: "0px"}}/>
+      <img src={logo3} alt="logo" style={{ margin: "0px"}}/>
       </div>
     </div>
   )

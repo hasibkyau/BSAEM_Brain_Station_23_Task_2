@@ -8,8 +8,10 @@ import { Banner } from './components/Banner';
 
 import banner from './assets/img/GG 2.png';
 import Authoring from './components/Authoring';
-import { Designs } from './components/Designs';
 import { Features } from './components/Features';
+import { Partners } from './components/Partners';
+import { Designs } from './components/Designs';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -33,9 +35,16 @@ function App() {
 
     <Features/>
     <br/><br/><br/>
+    
+
+    <Partners/>
+    <br/><br/><br/>
 
     <Designs/>
     <br/><br/><br/>
+
+    <Footer/>
+    <br /><br /><br />
 
     </div>
   );
