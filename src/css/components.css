@@ -129,8 +129,11 @@
 }
 
 .text--logo{
-    font-size:25px; 
-    float:left
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
 }
 
 .text--footer{
@@ -224,4 +227,9 @@
     letter-spacing: 0.2px;
     
     color: #858585;
+}
+
+
+.footer-link{
+    text-decoration: none;
 }

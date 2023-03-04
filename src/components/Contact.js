@@ -2,9 +2,11 @@ import React from 'react';
 import '../css/components.css';
 import { Image } from 'react-bootstrap';
 
-import logo1 from '../assets/img/page 1 1.png'
-import logo2 from '../assets/img/page 1 2.png'
-import logo3 from '../assets/img/page 2 1.png'
+import linkedin from '../assets/icon/Linkedin icon.svg'
+import facebook from '../assets/icon/Facebook.svg'
+import instagram from '../assets/icon/Instagram.svg'
+import youtube from '../assets/icon/Youtube.svg'
+import { Linkedin } from 'react-bootstrap-icons';
 
 
 
@@ -18,20 +20,25 @@ let data = {
 export const Contact = () => {
     return (
         <div>
-            <div className="container text-center">
-                <p className="title title--banner">{data.title_first_name}<br />{data.title_last_name}</p>
-                <p className="title title--subtitle">{data.subtitle}</p>
+            <div class="row m-2">
+
+                <div class="col-4">
+                    <p class="text text--logo">Logo</p>
+                </div>
+
+                <div class="col">
+                    <a class="li-link footer-link" href="#"><p class="text text--footer">Team</p></a>
+                    <a class="footer-link" href="#"><p class="text text--footer">Office Location</p></a>
+                    <a class="footer-link" href="#"><p class="text text--footer">Brainstation 23 Limited</p></a>
+
+                    <a class="footer-link" href="#"><img class="m-1" src={linkedin} alt="icon" /></a>
+                    <a class="footer-link" href="#"><img class="m-1" src={facebook} alt="icon" /></a>
+                    <a class="footer-link" href="#"><img class="m-1" src={instagram} alt="icon"/></a>
+                    <a class="footer-link" href="#"><img class="m-1" src={youtube} alt="icon"/></a>
+                </div>
+
             </div>
 
-            <br />
-
-            <div class="text-center">
-                <button type="button" class="btn btn-primary">Request Demo</button>
-            </div>
-
-            <br /><br /><br />
-
-            
         </div>
     )
 }
