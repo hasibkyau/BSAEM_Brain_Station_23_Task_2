@@ -1,14 +1,15 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
+import { Image } from 'react-bootstrap';
 
 import { NavBar } from './components/NavBar';
 import { Banner } from './components/Banner';
 
 import banner from './assets/img/GG 2.png';
 import Authoring from './components/Authoring';
+import { Designs } from './components/Designs';
 
-import { Image } from 'react-bootstrap';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
     <img src="assets/img/Ellipse 88.png" className="bg_effect bg_effect--bottom" alt='bg-effect'/> */}
 
     <NavBar/>
-    <br/>
+    <br/><br/>
 
     <Banner/>
 
@@ -29,7 +30,9 @@ function App() {
 
     <Authoring/>
 
-    <br/>
+    <br/><br/><br/>
+
+    <Designs/>
 
     </div>
   );
