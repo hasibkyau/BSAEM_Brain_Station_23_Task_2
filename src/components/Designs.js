@@ -1,9 +1,10 @@
 import React from 'react';
 import '../css/components.css';
+import { Image } from 'react-bootstrap';
+
 import logo1 from '../assets/logo/image 2.png'
 import logo2 from '../assets/logo/image 3.png'
 import logo3 from '../assets/logo/image 4.png'
-
 
 let data = {
   "title_first_name": "Partners",
@@ -23,13 +24,13 @@ export const Designs = () => {
       <div className="row m-3">
         <div class="row">
           <div class="col text-center">
-            <img src={logo1} alt="logo" />
+            <Image src={logo1} alt="logo" />
           </div>
           <div class="col text-center">
-            <img src={logo2} alt="logo" />
+            <Image src={logo2} alt="logo" />
           </div>
           <div class="col text-center">
-            <img src={logo3} alt="logo"/>
+            <Image src={logo3} alt="logo"/>
           </div>
         </div>
       </div>
