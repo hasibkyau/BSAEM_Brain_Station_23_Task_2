@@ -9,7 +9,7 @@ import { Banner } from './components/Banner';
 import banner from './assets/img/GG 2.png';
 import Authoring from './components/Authoring';
 import { Designs } from './components/Designs';
-
+import { Features } from './components/Features';
 
 function App() {
   return (
@@ -29,10 +29,13 @@ function App() {
     <Image className='img-fluid' src={banner} alt='bg-effect'/>
 
     <Authoring/>
+    <br/><br/><br/>
 
+    <Features/>
     <br/><br/><br/>
 
     <Designs/>
+    <br/><br/><br/>
 
     </div>
   );
