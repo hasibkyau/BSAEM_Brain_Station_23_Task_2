@@ -16,25 +16,16 @@ let data = {
 export const Designs = () => {
   return (
     <div>
-      <div className="container">
+      <div className="container text-center">
         <p className="title title--banner">{data.title_first_name}<br />{data.title_last_name}</p>
         <p className="title title--subtitle">{data.subtitle}</p>
-      </div>
+      
+      <br />
 
-      <div className="row m-3">
-        <div class="row">
-          <div class="col text-center">
-            <Image src={logo1} alt="logo" />
-          </div>
-          <div class="col text-center">
-            <Image src={logo2} alt="logo" />
-          </div>
-          <div class="col text-center">
-            <Image src={logo3} alt="logo"/>
-          </div>
-        </div>
+      <Image src={logo1} alt="logo" style={{ margin: "0 48px"}} />
+      <Image src={logo2} alt="logo" style={{ margin: "0 48px"}}/>
+      <Image src={logo3} alt="logo" style={{ margin: "0 48px"}}/>
       </div>
-
     </div>
   )
 }
