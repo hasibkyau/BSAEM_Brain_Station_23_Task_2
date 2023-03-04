@@ -59,7 +59,7 @@ const features = myJSON.map(item => {
 
 export const Features = () => {
   return (
-    <div>
+    <div id="features">
       <div className="container">
         <p className="title title--banner">{data.title_first_name}<br />{data.title_last_name}</p>
         <p className="title title--subtitle">{data.subtitle}</p>

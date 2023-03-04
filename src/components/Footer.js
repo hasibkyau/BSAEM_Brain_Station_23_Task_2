@@ -17,7 +17,7 @@ let data = {
 
 export const Footer = () => {
     return (
-        <div>
+        <div id="contact">
             <div className="container text-center">
                 <p className="title title--banner">{data.title_first_name}<br />{data.title_last_name}</p>
                 <p className="title title--subtitle">{data.subtitle}</p>

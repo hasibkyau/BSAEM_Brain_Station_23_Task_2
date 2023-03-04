@@ -16,7 +16,7 @@ let data = {
 
 export const Designs = () => {
   return (
-    <div>
+    <div id="designs">
       <div className="container text-center">
         <p className="title title--banner">{data.title_first_name}<br />{data.title_last_name}</p>
         <p className="title title--subtitle">{data.subtitle}</p>

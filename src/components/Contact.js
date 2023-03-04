@@ -19,7 +19,7 @@ let data = {
 
 export const Contact = () => {
     return (
-        <div>
+        <div id="contact">
             <div class="row m-2">
 
                 <div class="col-4">
@@ -27,7 +27,7 @@ export const Contact = () => {
                 </div>
 
                 <div class="col">
-                    <a class="li-link footer-link" href="#"><p class="text text--footer">Team</p></a>
+                    <a class="footer-link" href="#"><p class="text text--footer">Team</p></a>
                     <a class="footer-link" href="#"><p class="text text--footer">Office Location</p></a>
                     <a class="footer-link" href="#"><p class="text text--footer">Brainstation 23 Limited</p></a>
 

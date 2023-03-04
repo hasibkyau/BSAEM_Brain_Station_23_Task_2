@@ -16,12 +16,12 @@ import { Contact } from './components/Contact';
 
 function App() {
   return (
-    <div style={{background:"#121212"}}>
+    <div id="home" style={{background:"#121212"}}>
       
 
     <img src="assets/img/Ellipse 87.png" className="bg_effect bg_effect--top" alt='bg-effect'/>
-    {/* <img src="assets/img/Ellipse 86.png" className="bg_effect bg_effect--left" alt='bg-effect'/> */}
-    {/* <img src="assets/img/Ellipse 87.png" className="bg_effect bg_effect--right" alt='bg-effect'/>
+    {/* <img src="assets/img/Ellipse 86.png" className="bg_effect bg_effect--left" alt='bg-effect'/>
+    <img src="assets/img/Ellipse 87.png" className="bg_effect bg_effect--right" alt='bg-effect'/>
     <img src="assets/img/Ellipse 88.png" className="bg_effect bg_effect--bottom" alt='bg-effect'/> */}
 
     <NavBar/>
@@ -47,6 +47,7 @@ function App() {
     <Footer/>
     <br /><br /><br />
 
+    <hr className='m-3' style={{color: "red", backgroundColor: "white",height: 3}}/>
     <Contact/>
 
     </div>
