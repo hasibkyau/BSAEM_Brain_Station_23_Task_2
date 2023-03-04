@@ -55,7 +55,7 @@
 }
 
 .bg_effect--left{
-  left: calc(50% - 1309px/2 - 659.5px);
+  left: calc(50% - 1309px/2 - 200px);
   top: 1360px;
 }
 

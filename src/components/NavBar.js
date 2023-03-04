@@ -35,7 +35,7 @@ export const NavBar = () => {
       <Navbar  expand="md" className={scrolled ? "scrolled" :"" }>
         <Container>
           <Navbar.Brand href="/">
-            <img src={logo} alt="Logo" style={{marginRight:"10px"}}/>
+            <img id="#home" src={logo} alt="Logo" style={{marginRight:"10px"}}/>
             <span style={{color:"white"}}> BSEAM</span>
           </Navbar.Brand>
           
@@ -46,10 +46,10 @@ export const NavBar = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}><p className="navbar-link">Home</p></Nav.Link>
-              <Nav.Link href="#authoring" className={activeLink === 'Authoring' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}><p className="navbar-link">Authoring</p></Nav.Link>
-              <Nav.Link href="#features" className={activeLink === 'Features' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p className="navbar-link">Features</p></Nav.Link>
-              <Nav.Link href="#designs" className={activeLink === 'Designs' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p className="navbar-link">Designs</p></Nav.Link>
-              <Nav.Link href="#contact" className={activeLink === 'Contact Us' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}><p className="navbar-link">Contact Us</p></Nav.Link>
+              <Nav.Link href="#authoring" className={activeLink === 'Authoring' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('authoring')}><p className="navbar-link">Authoring</p></Nav.Link>
+              <Nav.Link href="#features" className={activeLink === 'Features' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('features')}><p className="navbar-link">Features</p></Nav.Link>
+              <Nav.Link href="#designs" className={activeLink === 'Designs' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('designs')}><p className="navbar-link">Designs</p></Nav.Link>
+              <Nav.Link href="#contact" className={activeLink === 'Contact Us' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><p className="navbar-link">Contact Us</p></Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

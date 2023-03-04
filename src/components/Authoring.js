@@ -44,7 +44,7 @@ class Authoring extends Component {
         let content = <Image id="page" src={this.state.page} className="img-fluid" />;
 
         return (
-            <div style={{ marginTop: "-200px" }}>
+            <div id="authoring" style={{ marginTop: "-200px" }}>
 
             <div className="container">
                 <p className="title title--banner">Effortlessly Create and<br />Manage Content</p>

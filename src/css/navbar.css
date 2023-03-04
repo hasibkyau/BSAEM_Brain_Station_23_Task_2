@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     margin-top: 20px;
-    /* background-color: rgba(0,0,0,0); */
+    /* background-color: rgba(0,0,0,0.2); */
     /* background-color: #121212;; */
     z-index: 1;
 
@@ -12,7 +12,6 @@
     text-decoration: none;
     font-weight:700;
     font-size: 20px;
-    line-height: 24px;
     color: #FFFFFF;
 }
 
@@ -31,15 +30,17 @@
 }
 
 .navbar-link:hover{
-    color: grey;
+    color: gray;
 }
 
-.navbar-link:focus { 
+.navbar-link:focus {
+    font-size: 20px; 
     font-weight: 800;
     color: #FFFFFF;  
   }
 
 .navbar.active {  
+    font-size: 20px; 
     font-weight: 800;
     color: #FFFFFF;  
 }
