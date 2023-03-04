@@ -8,6 +8,8 @@ import { Banner } from './components/Banner';
 import banner from './assets/img/GG 2.png';
 import Authoring from './components/Authoring';
 
+import { Image } from 'react-bootstrap';
+
 function App() {
   return (
     <div style={{background:"#121212"}}>
@@ -20,24 +22,14 @@ function App() {
 
     <NavBar/>
     <br/>
-    {/* Banner: A functional (arrow) component without props */}
+
     <Banner/>
 
-    <img src={banner} className="img-fluid" alt='bg-effect'/>
+    <Image className='img-fluid' src={banner} alt='bg-effect'/>
 
-    {/* Authoring: a functional component with props */}
-    <Authoring 
-    title_first_name={"Effortlessly Create and"} 
-    title_last_name = {"Manage Content"}
-    subtitle = {"Our intuitive authoring interface allows for easy and efficient content creation and management. Create and edit content, images, and videos, and preview your changes in real time."}
-    />
+    <Authoring/>
 
-
-
-
-
-
-     <br/>
+    <br/>
 
     </div>
   );

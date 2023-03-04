@@ -74,10 +74,11 @@
 
   
 .toggle-button {
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
     display: block;
     cursor: pointer;
     float: left;
+    width: 204px;
 
     color: #FFFFFF;
     font-weight: 700;
@@ -90,20 +91,84 @@
     border-left: none;
     border-right: none;
     border-top: none;
-    /* padding: 5px 10px; */
-    padding: 0 60px;
+
+    /* padding: 0 60px; */
     outline: none;
-    /* margin: 10px; */
+
     margin-right: 20px;
 
+}
+
+.toggle-button:hover {
+    border-bottom: 3px solid #007FDB;
 }
 
 .toggle-button:focus {  
 
     border-bottom: 3px solid #007FDB;
+    font-size: 20px;
   }
 
 .toggle-button:active{
     
     border-bottom: 3px solid #007FDB;
+    font-size: 20px;
 }
+
+
+.text {
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    letter-spacing: 0.2px;
+}
+
+.text--logo{
+    font-size:25px; 
+    float:left
+}
+
+.text--footer{
+    /* Team */
+    display: inline;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 106px;
+
+    /* White */
+
+    color: #FFFFFF;
+}
+
+.text--heading{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height, or 150% */
+    
+    letter-spacing: 0.1px;
+}
+
+.text--small{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+
+
